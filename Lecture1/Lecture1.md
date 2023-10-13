@@ -1,4 +1,4 @@
-### Why parallelism?
+# Why parallelism?
 
 ## Basic Problem
 One major motivation of using parallel processing: achieve a speedup
@@ -40,7 +40,7 @@ for processor performance improvement
 1. Increasing clock frequency 
 2. Exploiting instruction-level parallelism (superscalar execution)
 
-# Limit of ILP
+## Limit of ILP
 
 In modern superscalar execution, processors did in fact leverage parallel execution to make 
 programs run faster, it was just invisible to the programmer
@@ -50,7 +50,7 @@ Most available ILP is exploited by a processor capable of issuing four instructi
 ![2](./assets/2.png)
 
 
-# The "Power" Wall
+## The "Power" Wall
 Power consumed by a transistor:
 - Dynamic power capacitive load × voltage2 × frequency
 - Static power: transistors burn power even when inactive due to leakage
@@ -59,7 +59,7 @@ High power = high heat
 
 Power is a critical design constraint in modern processors
 
-# The Way to multicore
+## The Way to multicore
 The rate of single-instruction stream 
 performance scaling has decreased 
 (almost to zero)
