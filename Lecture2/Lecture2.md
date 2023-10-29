@@ -3,7 +3,7 @@
 ## Express the Parallelism
 Try the following example of Sin(x):
 
-```
+```C
 void sinx(int N, int terms,	float* x, float* result)	
 {	
 	for	(int i=0; i<N; i++)	
@@ -30,7 +30,7 @@ Use increasing transistor count to add more
 cores to the processor
 
 The following code using pthreads to express the task parallelism or thread parallism.
-```
+```C
 typedef	struct	{	
 	int	N;	
 	int	terms;	
@@ -65,7 +65,7 @@ This is just SIMD processing (Single instruction, multiple data).Same instructio
 Executed in parallel on all ALUs
 
 We can use AVX to express the data-parallism.
-```
+```C
 #include <immintrin.h>
 void sinx(int N, int terms,	float* x, float* result)	
 {

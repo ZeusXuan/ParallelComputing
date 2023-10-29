@@ -7,6 +7,7 @@ SPMD programming abstraction:
 - Call to ISPC function spawns “gang” of ISPC “program instances” 
 - All instances run ISPC code concurrently
 Upon return, all instances have completed
+
 SPMD(abstraction) ----(ISPC)----> SIMD(implementation)
 
 The following picture shows the abstraction:![1](./assets/1.png)
@@ -25,7 +26,7 @@ Two different ways to deal with loops:
 ![2](./assets/2.png)
 
 2. the other looks like:
-```
+```C
 export void sinx(uniform int N, uniform int terms, uniform float* x, uniform float* result){
     //assumes N	% programCount = 0
     uniform int count = N / programCount;
