@@ -26,8 +26,6 @@ __sequential consistency__:
 2. The value returned by a read is the value written by the 
 last write to the location as given by the serial order
 
-![1](./assets/1.png)
-
 In an other word, A memory system is coherent if:
 1. A read by processor P to address X that follows a write by P to address X, 
 should return the value of the write by P
@@ -42,14 +40,14 @@ two processors are observed in the same order by all processors.
 - Condition 2: “write propagation”
 - Condition 3: “write serialization”
 
+
+
 Snooping cache-coherence schemes'main idea: all coherence-related activity is broadcast to all processors
 
 ### Very simple implementation
 Let’s assume: __Write-through caches__
 
 Upon write, cache controller broadcasts invalidation message.As a result, the next read from other processors will trigger cache miss
-![2](./assets/2.png)
-![3](./assets/3.png)
 
 But write-through policy implementation is inefficient
 - Every write operation goes out to memory
@@ -75,9 +73,6 @@ Three coherence-related bus transactions (from remote caches)
 - BusRd: obtain copy of line with no intent to modify
 - BusRdX: obtain copy of line with intent to modify
 - flush: write dirty line out to memory
-
-So we can see state transition diagram like following graph(remember all caches are carrying out this logic independently to maintain coherence)
-![4](./assets/4.png)
 
 Let us think about a lower-level choices: who should supply data on a cache miss when line is in the E or S state of another cache? Obviously, cache-to-cache transfers add complexity, but commonly used to reduce both latency of data access and reduce memory 
 bandwidth required by application

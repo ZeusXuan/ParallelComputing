@@ -3,7 +3,7 @@ This repository record my learning experience of CMU 15-418 and solution of  Sta
 - http://15418.courses.cs.cmu.edu/spring2016/lectures
 - https://gfxcourses.stanford.edu/cs149/fall22
 
-By the way, why do I choose to write? Just as Prof. Kayvon said "because writing is a way many good architects and systems 
+By the way, why do I choose to write? Just as it said "because writing is a way many good architects and systems 
 designers force themselves to think (explaining clearly and 
 thinking clearly are highly correlated!)"
 
@@ -16,6 +16,11 @@ If you like it, __Just Star!__
 - [Lecture4](./Lecture4/Lecture4.md)
 - [Lecture5](./Lecture5/Lecture5.md)
 - [Lecture6](./Lecture6/Lecture6.md)
+- [Lecture7](./Lecture7/Lecture7.md)
+- [Lecture8](./Lecture8/Lecture8.md)
+- [Lecture9](./Lecture9/Lecture9.md)
+- [Lecture10](./Lecture10/Lecture10.md)
+- [Lecture11](./Lecture11/Lecture11.md)
 ## Assignment Solution
 - [Assignment1](./Assignment/Assignment1/Assignment1.md)
 

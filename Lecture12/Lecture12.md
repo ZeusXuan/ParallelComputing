@@ -82,8 +82,6 @@ Here is a basic design:
 - When a buffer is full, client can NACK a transaction, causing a retry
 
 ![5](./assets/5.png)
-We can have Pipelined transactions:
-![6](./assets/6.png)
 
 We also need to deal with two problem:
 
